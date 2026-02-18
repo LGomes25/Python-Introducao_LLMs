@@ -1,10 +1,8 @@
 # 📖 Introdução às LLMs
-
 Este repositório reúne os estudos e implementações realizados em uma trilha de introdução a Large Language Models (LLMs).
 O projeto está organizado em módulos e aulas, mostrando a evolução desde chamadas simples de modelos até a construção de um chatbot completo com Streamlit, LangChain e LangGraph.
 
 # 🚀 Estrutura do Projeto
-
 A pasta src/ contém os códigos separados por módulos e aulas:
 
 - Módulo 2 – Terminal
@@ -20,7 +18,6 @@ A pasta src/ contém os códigos separados por módulos e aulas:
 - Extra: Bot com histórico como contexto, permitindo memória de conversa.
 
 # ⚙️ Configuração do LM Studio
-
 Este projeto utiliza o LM Studio como servidor local de modelos.
 No arquivo config.py, estão definidas funções para configurar chamadas tanto via LangChain quanto via cliente OpenAI:
 
@@ -33,24 +30,25 @@ No arquivo config.py, estão definidas funções para configurar chamadas tanto 
   Isso permite alternar facilmente entre chamadas via LangChain e chamadas diretas ao servidor do LM Studio.
 
 # ⚙️ Criando um ambiente
-
-Na raiz do projeto:
-
+Utilize os comandos no terminal, dentro da raiz do projeto.
+```text
 - python -m venv .venv
+```
 
 # 🖥️ Selecionando o interpretador
-
 - Ctrl + Shift + P
 - Digite: Python: Select Interpreter
 - Escolha o Python dentro de .venv
   Se não for criada automaticamente a pasta .vscode/settings.json, crie manualmente com:
+  ```text
   {
-  "python-envs.pythonProjects": [],
-  "python.formatting.provider": "black",
-  "editor.formatOnSave": true,
-  "python.analysis.typeCheckingMode": "basic",
-  "python.defaultInterpreterPath": ".venv/Scripts/python.exe"
+    "python-envs.pythonProjects": [],
+    "python.formatting.provider": "black",
+    "editor.formatOnSave": true,
+    "python.analysis.typeCheckingMode": "basic",
+    "python.defaultInterpreterPath": ".venv/Scripts/python.exe"
   }
+  ```
 
 # 📂 Estrutura de Pastas
 ```text
@@ -65,35 +63,36 @@ Na raiz do projeto:
 # 📦 Instalação das dependências
 
 Atualize o pip e instale as bibliotecas:
-
+```text
 - python.exe -m pip install --upgrade pip
 
-- pip list // verificar a lista do pip
+- pip list                             // verificar a lista do pip
 
 - pip install -U langchain-core
 - pip install -U langchain-community
 - pip install -U langchain-openai
-- pip install -U langchain-tools // para decorators tipo @tools
+- pip install -U langchain-tools       // para decorators tipo @tools
 - pip install -U langgraph
-- pip install -U pypdf // leitor de pdf
-- pip install -U pymupdf // leitor de pdf
-- pip install -U streamlit // visual para o chat
+- pip install -U pypdf                 // leitor de pdf
+- pip install -U pymupdf               // leitor de pdf
+- pip install -U streamlit             // visual para o chat
 - pip install -U python-dotenv
 - pip install -U requests
-- pip install -U rich // visual para o terminal
+- pip install -U rich                  // visual para o terminal
+```
 
 # ▶️ Ativando e desativando o ambiente
+Utilize os comandos no terminal, dentro da pasta do projeto.
 
 ### Ativar
-
+```text
 .venv\Scripts\activate
-
+```
 ### Desativar
-
+```text
 deactivate
-
+```
 # 📝 Observações
-
 - O projeto mostra a evolução do terminal ao frontend web.
 - Cada aula traz um passo incremental na construção do chatbot.
 - Quando há PDF carregado, o conteúdo é usado como contexto para as respostas.
