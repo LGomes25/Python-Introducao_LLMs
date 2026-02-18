@@ -64,21 +64,22 @@ Na raiz do projeto:
 # 📦 Instalação das dependências
 
 Atualize o pip e instale as bibliotecas:
-python.exe -m pip install --upgrade pip
 
-pip list // verificar a lista do pip
+- python.exe -m pip install --upgrade pip
 
-pip install -U langchain-core
-pip install -U langchain-community
-pip install -U langchain-openai
-pip install -U langchain-tools // para decorators tipo @tools
-pip install -U langgraph
-pip install -U pypdf // leitor de pdf
-pip install -U pymupdf // leitor de pdf
-pip install -U streamlit // visual para o chat
-pip install -U python-dotenv
-pip install -U requests
-pip install -U rich // visual para o terminal
+- pip list // verificar a lista do pip
+
+- pip install -U langchain-core
+- pip install -U langchain-community
+- pip install -U langchain-openai
+- pip install -U langchain-tools // para decorators tipo @tools
+- pip install -U langgraph
+- pip install -U pypdf // leitor de pdf
+- pip install -U pymupdf // leitor de pdf
+- pip install -U streamlit // visual para o chat
+- pip install -U python-dotenv
+- pip install -U requests
+- pip install -U rich // visual para o terminal
 
 # ▶️ Ativando e desativando o ambiente
 
