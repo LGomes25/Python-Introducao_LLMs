@@ -53,13 +53,14 @@ Na raiz do projeto:
   }
 
 # 📂 Estrutura de Pastas
-
-├── src/ # Código principal (módulos e aulas)
-├── data/ # PDFs e arquivos de suporte
-├── .venv/ # Ambiente virtual
-├── .vscode/ # Configurações do VS Code
+```text
+├── src/         # Código principal (módulos e aulas)
+├── data/        # PDFs e arquivos de suporte
+├── .venv/       # Ambiente virtual
+├── .vscode/     # Configurações do VS Code
 ├── .gitignore
-└── README.md # Documentação
+└── README.md    # Documentação
+```
 
 # 📦 Instalação das dependências
 
